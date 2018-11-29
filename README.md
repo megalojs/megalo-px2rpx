@@ -9,10 +9,10 @@ According to one stylesheet, generate rpx version and @1x, @2x and @3x styleshee
 
 [npm-image]: https://img.shields.io/npm/v/@megalo/px2rpx.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/@megalo/px2rpx
-[travis-image]: https://img.shields.io/travis/megalojs/px2rpx.svg?style=flat-square
-[travis-url]: https://travis-ci.org/megalojs/px2rpx
-[coveralls-image]: https://img.shields.io/coveralls/megalojs/px2rpx.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/megalojs/px2rpx
+[travis-image]: https://img.shields.io/travis/megalojs/megalo-px2rpx.svg?style=flat-square
+[travis-url]: https://travis-ci.org/megalojs/megalo-px2rpx
+[coveralls-image]: https://img.shields.io/coveralls/megalojs/megalo-px2rpx.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/megalojs/megalo-px2rpx
 [downloads-image]: http://img.shields.io/npm/dm/@megalo/px2rpx.svg?style=flat-square
 [downloads-url]: https://npmjs.org/package/@megalo/px2rpx
 
