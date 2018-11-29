@@ -1,0 +1,41 @@
+{
+  "name": "@megalo/px2rpx",
+  "description": "According to one stylesheet, generate rpx version and @1x, @2x and @3x stylesheet",
+  "version": "0.0.2-1",
+  "homepage": "https://github.com/megalojs/px2rpx",
+  "author": "zwwill <zwwill7@163.com>",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:megalojs/px2rpx.git"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "dependencies": {
+    "css": "~2.2.0",
+    "extend": "~3.0.0",
+    "commander": "~2.6.0",
+    "chalk": "~0.5.1",
+    "fs-extra": "~0.16.3"
+  },
+  "devDependencies": {
+    "istanbul": "^0.3.6",
+    "coveralls": "^2.10.0",
+    "mocha": "^2.1.0"
+  },
+  "bin": {
+    "px2rpx": "./bin/px2rpx.js"
+  },
+  "scripts": {
+    "test": "mocha",
+    "cover": "node node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --reporter dot"
+  },
+  "main": "index.js",
+  "keywords": [
+    "3x",
+    "rpx",
+    "px2rpx"
+  ],
+  "license": "MIT"
+}
