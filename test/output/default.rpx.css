@@ -5,8 +5,10 @@ body {
   color: #888;
   /* color is gray */
   border: 1px solid;
-  height: 20px;
-  padding: 6px;
+  height: 20rpx;
+  /* px */
+  padding: 6rpx;
+  /*px*/
   -webkit-animation: anim1 linear infinite;
 }
 
@@ -15,7 +17,8 @@ body {
   width: 100%;
   height: 20rpx;
   margin: 10rpx;
-  font-size: 28px;
+  font-size: 28rpx;
+  /*px*/
   animation: anim2 linear infinite;
 }
 
@@ -27,6 +30,7 @@ body {
   margin: 0;
   height: 0;
   line-height: 0;
+  /*px*/
   width: 40rpx;
   -webkit-box-shadow: 0 2rpx 2rpx rgba(0, 0, 0, 0.12);
   /* decimal */
@@ -51,7 +55,8 @@ body {
 
 @keyframes anim2 {
   0% {
-    height: 75px;
+    height: 75rpx;
+    /*px*/
     width: 75rpx;
     border: 1px solid #ddd;
   }
@@ -73,8 +78,10 @@ body {
     color: #888;
     /* color is gray */
     border: 1px solid;
-    height: 20px;
-    padding: 6px;
+    height: 20rpx;
+    /* px */
+    padding: 6rpx;
+    /*px*/
     -webkit-animation: anim3 linear infinite;
   }
 
@@ -83,7 +90,8 @@ body {
     width: 100%;
     height: 20rpx;
     margin: 10rpx;
-    font-size: 28px;
+    font-size: 28rpx;
+    /*px*/
     animation: anim4 linear infinite;
   }
 
@@ -95,6 +103,7 @@ body {
     margin: 0;
     height: 0;
     line-height: 0;
+    /*px*/
     width: 40rpx;
     -webkit-box-shadow: 0 2rpx 2rpx rgba(0, 0, 0, 0.12);
     /* decimal */
@@ -104,7 +113,8 @@ body {
   }
 
   .footer {
-    height: 100px;
+    height: 100rpx;
+    /*px*/
   }
 
 @-webkit-keyframes anim3 {
@@ -137,5 +147,6 @@ body {
 }
 
 .footer {
-  height: 100px;
+  height: 100rpx;
+  /*px*/
 }

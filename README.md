@@ -1,6 +1,6 @@
 # px2rpx
 
-According to one stylesheet, generate rpx version and @1x, @2x and @3x stylesheet.
+According to one stylesheet, generate rpx version.
 
 [![NPM version][npm-image]][npm-url]
 [![Build status][travis-image]][travis-url]
@@ -22,7 +22,6 @@ According to one stylesheet, generate rpx version and @1x, @2x and @3x styleshee
 The raw stylesheet only contains @2x style, and if you
 
 * don't intend to transform the original value, eg: 1px border, add `/*no*/` after the declaration
-* intend to use px by force，eg: font-size, add `/*px*/` after the declaration
 
 **Attention: Dealing with SASS or LESS, only `/*...*/` comment can be used, in order to have the comments persisted**
 
@@ -30,12 +29,12 @@ The raw stylesheet only contains @2x style, and if you
 ### API
 
 ```
-var Px2rpx = require('px2rpx');
-var px2rpxIns = new Px2rpx([config]);
+var Px2rpx = require('@megalojs/px2rpx');
+var px2rpxIns = new Px2rpx({
+  {rpxUnit: 0.5}
+});
 var originCssText = '...';
-var dpr = 2;
 var newCssText = px2rpxIns.generateRpx(originCssText); // generate rpx version stylesheet
-var newCssText = px2rpxIns.generateThree(originCssText, dpr); // generate @1x, @2x and @3x version stylesheet
 ```
 
 ### Example
@@ -46,9 +45,9 @@ One raw stylesheet: `test.css`
 
 ```
 .selector {
-  width: 150px;
-  height: 64px; /*px*/
-  font-size: 28px; /*px*/
+  width: 350px;
+  height: 60px; 
+  font-size: 20px; 
   border: 1px solid #ddd; /*no*/
 }
 ```
@@ -59,52 +58,9 @@ Rpx version: `test.debug.css`
 
 ```
 .selector {
-  width: 2rpx;
-  border: 1px solid #ddd;
-}
-[data-dpr="1"] .selector {
-  height: 32px;
-  font-size: 14px;
-}
-[data-dpr="2"] .selector {
-  height: 64px;
-  font-size: 28px;
-}
-[data-dpr="3"] .selector {
-  height: 96px;
-  font-size: 42px;
-}
-```
-
-@1x version: `test1x.debug.css`
-
-```
-.selector {
-  width: 75px;
-  height: 32px;
-  font-size: 14px;
-  border: 1px solid #ddd;
-}
-```
-
-@2x version: `test2x.debug.css`
-
-```
-.selector {
-  width: 150px;
-  height: 64px;
-  font-size: 28px;
-  border: 1px solid #ddd;
-}
-```
-
-@3x version: `test3x.debug.css`
-
-```
-.selector {
-  width: 225px;
-  height: 96px;
-  font-size: 42px;
+  width: 750rpx;
+  height: 120rpx;
+  font-size: 40rpx;
   border: 1px solid #ddd;
 }
 ```
