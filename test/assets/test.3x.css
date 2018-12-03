@@ -102,7 +102,7 @@ body {
   }
   @keyframes anim4 {
     0% {
-      height: 112.5px; /*px*/
+      height: 112.5px; 
       width: 112.5px;
       border: 1px solid #ddd; /*no*/
     }
