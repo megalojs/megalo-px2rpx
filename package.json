@@ -1,12 +1,12 @@
 {
   "name": "@megalo/px2rpx",
-  "description": "According to one stylesheet, generate rpx version and @1x, @2x and @3x stylesheet",
-  "version": "0.0.2",
-  "homepage": "https://github.com/megalojs/px2rpx",
+  "description": "According to one stylesheet, generate rpx version.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/megalojs/megalo-px2rpx",
   "author": "zwwill <zwwill7@163.com>",
   "repository": {
     "type": "git",
-    "url": "git@github.com:megalojs/px2rpx.git"
+    "url": "git@github.com:megalojs/megalo-px2rpx.git"
   },
   "files": [
     "bin",
